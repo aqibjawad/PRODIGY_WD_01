@@ -1,0 +1,50 @@
+body{
+    background-color: black;
+}
+.navbar {
+    background-color: grey;
+    border-radius: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.navbar ul {
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+.navbar li {
+    float: left;
+    list-style: none;
+    margin: 13px 20px;
+}
+.navbar li a {
+    padding: 3px 3px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+.navbar li a:hover {
+    background-color: #333;
+    color: lightblue;
+}
+.search {
+    float: right;
+    color: grey;
+    padding: 12px 75px;
+}
+.navbar input {
+    border: 2px solid black;
+    color: lightblue;
+    border-radius: 14px;
+    padding: 3px 4px;
+}
+@media screen and (max-width: 768px) {
+    .navbar li {
+        margin: 10px 10px;
+    }
+    .search {
+        padding: 10px 20px;
+    }
+}
